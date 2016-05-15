@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <!-- <link href="css/freelancer.css" rel="stylesheet"> -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/header-style.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script>
+        function init() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 300,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                    classie.add(header,"smaller");
+                } else {
+                    if (classie.has(header,"smaller")) {
+                        classie.remove(header,"smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+    </script>
+    </head>
+    <body id="page-top" class="index">
+        <!-- <div id="wrapper">
+            <header>
+
+
+                    <h1 id="logo">
+                        Pratik
+                    </h1>
+                    <nav>
+
+                        <label> Reynold's Number
+                        <br />
+                        <h5> kyme</h5>
+                         </label>
+                        <a href="#home">DF</a>
+                        <a href="#profile">F</a>
+                        <a href="messages">DF</a>
+                    </nav>
+
+            </header>
+        </div> -->
+            <div class="container2">
+                <div class="row">
+                    <div class="board">
+                        <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+                        <div class="board-inner">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <div class="liner"></div>
+                            <li class="active">
+                                    <a href="#home" data-toggle="tab" title="welcome">
+                                        <span class="round-tabs one">
+                                            <label> DF </label>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a href="#profile" data-toggle="tab" title="profile">
+                                        <span class="round-tabs two">
+                                            <!-- <i class="glyphicon glyphicon-user"></i> -->
+                                            <label> Q </label>                                        
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a href="#messages" data-toggle="tab" title="bootsnipp goodies">
+                                        <span class="round-tabs two">
+                                            <!-- <i class="glyphicon glyphicon-user"></i> -->
+                                            <label> D </label>                                        
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="home">
+                                        <div class="row">                                        
+                                            <div class="col-md-8 dividers">
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <!-- Form Name -->
+                                                        <legend>Fluid Properties</legend>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="flow-rate">Flow Rate (m^3/s)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="flow-rate" name="flow-rate" type="text" placeholder="Flow Rate" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="velocity">Velocity (kg/m^3)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="velocity" name="velocity" type="text" placeholder="Velocity" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="viscosity">Viscosity (Pa-s)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="viscosity" name="viscosity" type="text" placeholder="Viscosity" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                                <!-- <div class="col-md-8 dividers"> -->
+
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <!-- Form Name -->
+                                                        <legend>Pipe Properties</legend>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="nominal-dia">Nominal Diameter (m)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="nominal-dia" name="nominal-dia" type="text" placeholder="Nominal Diameter" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="internal-dia">Internal Diameter (m)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="internal-dia" name="internal-dia" type="text" placeholder="Internal Diameter" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="pipe-len">Pipe Length (m)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="pipe-len" name="pipe-len" type="text" placeholder="Pipe Length " class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Select Multiple -->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="surface-type">Surface Type</label>
+                                                            <div class="col-md-6">
+                                                                <select id="surface-type" name="surface-type" class="form-control" multiple="multiple">
+                                                                    <option value="1">Commercialized Steel</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label class="col-md-4 control-label" for="singlebutton"></label>
+                                                          <div class="col-md-4">
+                                                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Calculate Driving Force</button>
+                                                          </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                        </div>
+                                            <div class="col-md-4 dividers">
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <!-- Form Name -->
+                                                        <legend>Fitting Properties</legend>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="fitting-no">Number of Fittings</label>
+                                                            <div class="col-md-6">
+                                                                <input id="fitting-no" name="fitting-no" type="text" placeholder="Number of Fittings" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->      
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="k">k1</label>
+                                                            <div class="col-md-6">
+                                                                <input id="k" name="k" type="text" placeholder="k1" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="k">ki</label>
+                                                            <div class="col-md-6">
+                                                                <input id="k" name="k" type="text" placeholder="ki" class="form-control input-md" required="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="kd">kd</label>
+                                                            <div class="col-md-6">
+                                                                <input id="kd" name="kd" type="text" placeholder="kd" class="form-control input-md">
+                                                                <span class="help-block">help</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Button -->
+                                                        <!-- Button -->
+                                                        <div class="form-group">
+                                                          <label class="col-md-4 control-label" for="singlebutton"></label>
+                                                          <div class="col-md-4">
+                                                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Add Fitting</button>
+                                                          </div>
+                                                        </div>
+
+                                                    </fieldset>
+                                                </form>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        
+                                    <div class="tab-pane fade" id="profile">
+
+                                        <div class="row">                                        
+                                            <div class="col-md-8 dividers">
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <!-- Form Name -->
+                                                        <legend>Fluid Properties</legend>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="flow-rate">Flow Rate (m^3/s)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="flow-rate" name="flow-rate" type="text" placeholder="Flow Rate" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="velocity">Velocity (kg/m^3)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="velocity" name="velocity" type="text" placeholder="Velocity" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="viscosity">Viscosity (Pa-s)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="viscosity" name="viscosity" type="text" placeholder="Viscosity" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                                <!-- <div class="col-md-8 dividers"> -->
+
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <!-- Form Name -->
+                                                        <legend>Pipe Properties</legend>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="nominal-dia">Nominal Diameter (m)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="nominal-dia" name="nominal-dia" type="text" placeholder="Nominal Diameter" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="internal-dia">Internal Diameter (m)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="internal-dia" name="internal-dia" type="text" placeholder="Internal Diameter" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="pipe-len">Pipe Length (m)</label>
+                                                            <div class="col-md-6">
+                                                                <input id="pipe-len" name="pipe-len" type="text" placeholder="Pipe Length " class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Select Multiple -->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="surface-type">Surface Type</label>
+                                                            <div class="col-md-6">
+                                                                <select id="surface-type" name="surface-type" class="form-control" multiple="multiple">
+                                                                    <option value="1">Commercialized Steel</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label class="col-md-4 control-label" for="singlebutton"></label>
+                                                          <div class="col-md-6">
+                                                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Calculate Driving Force</button>
+                                                          </div>
+                                                        </div>
+                                                    </fieldset>
+
+                                                </form>
+                                            
+                                                
+                                        
+                                        </div>
+                                            <div class="col-md-4 dividers">
+                                                <form class="form-horizontal">
+                                                    <fieldset>
+                                                        <!-- Form Name -->
+                                                        <legend>Fitting Properties</legend>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="fitting-no">Number of Fittings</label>
+                                                            <div class="col-md-6">
+                                                                <input id="fitting-no" name="fitting-no" type="text" placeholder="Number of Fittings" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->      
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="k">k1</label>
+                                                            <div class="col-md-6">
+                                                                <input id="k" name="k" type="text" placeholder="k1" class="form-control input-md" required="">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="k">ki</label>
+                                                            <div class="col-md-6">
+                                                                <input id="k" name="k" type="text" placeholder="ki" class="form-control input-md" required="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="kd">kd</label>
+                                                            <div class="col-md-6">
+                                                                <input id="kd" name="kd" type="text" placeholder="kd" class="form-control input-md">
+                                                                <span class="help-block">help</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Button -->
+                                                         <div class="form-group">
+                                                          <label class="col-md-4 control-label" for="singlebutton"></label>
+                                                          <div class="col-md-4">
+                                                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Add Fitting</button>
+                                                          </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="settings">
+                                        <h3 class="head text-center">Drop comments!</h3>
+                                        <p class="narrow text-center">
+                                            Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                                        </p>
+                                        
+                                        <p class="text-center">
+                                            <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="doner">
+                                        <div class="text-center">
+                                            <i class="img-intro icon-checkmark-circle"></i>
+                                        </div>
+                                        <h3 class="head text-center">thanks for staying tuned! <span style="color:#f48260;">♥</span> Bootstrap</h3>
+                                        <p class="narrow text-center">
+                                            Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+            <!-- Plugin JavaScript -->
+            <!-- Contact Form JavaScript -->
+            <!-- Custom Theme JavaScript -->
+            <script src="js/header.js"></script>
+        </body>
+    </html>
